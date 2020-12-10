@@ -1,94 +1,92 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <SongDataBase>
-  <genre ID = "1" GENRE_NAME = "ROCK">
-    <bandName BAND_NAME = "Slipknot">
-      <album ALB_NAME = "Vol 3">
-        <song Song_ID = "1"
-          SongName = "Three Nil"
-          Duration = "4:49"
-          ReleaseYear = "2004">
-        </song>
-        <song Song_ID = "2"
-          SongName = "Duality"
-          Duration = "3:33"
-          ReleaseYear = "2004">
-        </song>
-      </album>
-      <album ALB_NAME = "Iowa">
-        <song Song_ID = "3"
-          SongName = "People=Shit"
-          Duration = "3:35"
-          ReleaseYear = "2001">          
-        </song>
-      </album>
-      <album ALB_NAME = "Punisher: War Zone">
-        <song Song_ID = "4"
-          SongName = "Psychosocial"
-          Duration = "5:05"
-          ReleaseYear = "2008">
-        </song>
-      </album>
-    </bandName>
-    
-    <bandName BAND_NAME = "Papa Roach">
-      <album ALB_NAME = "The Paramour Sessions">
-        <song Song_ID = "5"
-          SongName = "To Be Loved"
-          Duration = "3:26"
-          ReleaseYear = "2006">
-        </song>
-      </album>
-      <album ALB_NAME = "Getting Away with Murder">
-        <song Song_ID = "6"
-          SongName = "Be Free"
-          Duration = "3:22"
-          ReleaseYear = "2004">
-        </song>
-      </album>
-    </bandName>
-  </genre>
-
-  
-  <genre ID = "2" GENRE_NAME = "JAZZ">
-    <bandName BAND_NAME= "zaz">
-      <album ALB_NAME = "Zaz">
-        <song Song_ID = "7"
-          SongName = "Je Veux"
-          Duration = "3:36"
-          ReleaseYear = "2010">
-        </song>
-      </album>
-    </bandName>
-
-    <bandName BAND_NAME= "Lionel Hampton">
-      <album ALB_NAME = "Zaz">
-        <song Song_ID = "8"
-          SongName = "Je Veux"
-          Duration = "3:36"
-          ReleaseYear = "2010">
-        </song>
-      </album>
-    </bandName>
-
-    <bandName BAND_NAME= "Benny Goodman">
-      <album ALB_NAME = "Unknown album">
-        <song Song_ID = "9"
-          SongName = "SING, SING, SING"
-          Duration = "5:23"
-          ReleaseYear = "1937">
-        </song>
-        <song Song_ID = "10"
-          SongName = "Let's Dance"
-          Duration = "2:31"
-          ReleaseYear = "1935">
-        </song>
-        <song Song_ID = "11"
-          SongName = "Swedish Pastry"
-          Duration = "3:57"
-          ReleaseYear = "1978">
-        </song>
-      </album>
-    </bandName>
-  </genre>
+  <song
+    Genre="ROCK"
+    BandName="Slipknot"
+    Album="Vol 3"
+    SongName="Three Nil"
+    Duration="4:49"
+    ReleaseYear="2004">
+  </song>
+  <song
+    Genre="ROCK"
+    BandName="Slipknot"
+    Album="Vol 3"
+    SongName="Duality"
+    Duration="3:33"
+    ReleaseYear="2004">
+  </song>
+  <song
+    Genre="ROCK"
+    BandName="Slipknot"
+    Album="Iowa"
+    SongName="People=Shit"
+    Duration="3:35"
+    ReleaseYear="2001">
+  </song>
+  <song
+    Genre="ROCK"
+    BandName="Slipknot"
+    Album="Punisher: War Zone"
+    SongName="Psychosocial"
+    Duration="5:05"
+    ReleaseYear="2008">
+  </song>
+  <song
+    Genre="ROCK"
+    BandName="Papa Roach"
+    Album="The Paramour Sessions"
+    SongName="To Be Love"
+    Duration="3:26"
+    ReleaseYear="2006">
+  </song>
+  <song
+    Genre="ROCK"
+    BandName="Papa Roach"
+    Album="Getting Away with Murder"
+    SongName="Be Free"
+    Duration="3:22"
+    ReleaseYear="2004">
+  </song>
+  <song
+    Genre="JAZZ"
+    BandName="zaz"
+    Album="Zaz"
+    SongName="Je Veux"
+    Duration="3:36"
+    ReleaseYear="2010">
+  </song>
+  <song
+    Genre="JAZZ"
+    BandName="Benny Goodman"
+    Album="Unknown album"
+    SongName="SING, SING, SING"
+    Duration="5:23"
+    ReleaseYear="1937">
+  </song>
+  <song
+    Genre="EDM"
+    BandName="Avicii"
+    Album="Stories"
+    SongName="Waiting For love"
+    Duration="3:50"
+    ReleaseYear="2015">
+  </song>
+  <song
+    Genre="EDM"
+    BandName="Avicii"
+    Album="True"
+    SongName="Wake Me Up"
+    Duration="4:32"
+    ReleaseYear="2013">
+  </song>
+  <song
+    Genre="EDM"
+    BandName="Avicii"
+    Album="True"
+    SongName="You Make Me"
+    Duration="3:50"
+    ReleaseYear="2013">
+  </song>
 </SongDataBase>
   

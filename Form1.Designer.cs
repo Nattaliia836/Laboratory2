@@ -31,22 +31,22 @@
             this.Search = new System.Windows.Forms.Button();
             this.Transform = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
-            this.Genre = new System.Windows.Forms.CheckBox();
-            this.BandName = new System.Windows.Forms.CheckBox();
-            this.Album = new System.Windows.Forms.CheckBox();
-            this.SongName = new System.Windows.Forms.CheckBox();
-            this.Duration = new System.Windows.Forms.CheckBox();
-            this.ReleaseYear = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.GenreCheck = new System.Windows.Forms.CheckBox();
+            this.BandNameCheck = new System.Windows.Forms.CheckBox();
+            this.AlbumCheck = new System.Windows.Forms.CheckBox();
+            this.SongNameCheck = new System.Windows.Forms.CheckBox();
+            this.DurationCheck = new System.Windows.Forms.CheckBox();
+            this.ReleaseYearCheck = new System.Windows.Forms.CheckBox();
+            this.GenreBox = new System.Windows.Forms.ComboBox();
+            this.BandNameBox = new System.Windows.Forms.ComboBox();
+            this.AlbumBox = new System.Windows.Forms.ComboBox();
+            this.SongNameBox = new System.Windows.Forms.ComboBox();
+            this.DurationBox = new System.Windows.Forms.ComboBox();
+            this.ReleaseYearBox = new System.Windows.Forms.ComboBox();
             this.SAX = new System.Windows.Forms.RadioButton();
             this.DOM = new System.Windows.Forms.RadioButton();
             this.LINQ = new System.Windows.Forms.RadioButton();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.ResultBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // Search
@@ -57,6 +57,7 @@
             this.Search.TabIndex = 0;
             this.Search.Text = "Search";
             this.Search.UseVisualStyleBackColor = true;
+            this.Search.Click += new System.EventHandler(this.Search_Click);
             // 
             // Transform
             // 
@@ -66,6 +67,7 @@
             this.Transform.TabIndex = 1;
             this.Transform.Text = "Transform";
             this.Transform.UseVisualStyleBackColor = true;
+            this.Transform.Click += new System.EventHandler(this.Transform_Click);
             // 
             // Clear
             // 
@@ -75,115 +77,116 @@
             this.Clear.TabIndex = 2;
             this.Clear.Text = "Clear";
             this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
-            // Genre
+            // GenreCheck
             // 
-            this.Genre.AutoSize = true;
-            this.Genre.Location = new System.Drawing.Point(29, 34);
-            this.Genre.Name = "Genre";
-            this.Genre.Size = new System.Drawing.Size(70, 24);
-            this.Genre.TabIndex = 3;
-            this.Genre.Text = "Genre";
-            this.Genre.UseVisualStyleBackColor = true;
-            this.Genre.CheckedChanged += new System.EventHandler(this.Genre_CheckedChanged);
+            this.GenreCheck.AutoSize = true;
+            this.GenreCheck.Location = new System.Drawing.Point(29, 34);
+            this.GenreCheck.Name = "GenreCheck";
+            this.GenreCheck.Size = new System.Drawing.Size(70, 24);
+            this.GenreCheck.TabIndex = 3;
+            this.GenreCheck.Text = "Genre";
+            this.GenreCheck.UseVisualStyleBackColor = true;
+            this.GenreCheck.CheckedChanged += new System.EventHandler(this.Genre_CheckedChanged);
             // 
-            // BandName
+            // BandNameCheck
             // 
-            this.BandName.AutoSize = true;
-            this.BandName.Location = new System.Drawing.Point(29, 81);
-            this.BandName.Name = "BandName";
-            this.BandName.Size = new System.Drawing.Size(109, 24);
-            this.BandName.TabIndex = 4;
-            this.BandName.Text = "Band Name";
-            this.BandName.UseVisualStyleBackColor = true;
+            this.BandNameCheck.AutoSize = true;
+            this.BandNameCheck.Location = new System.Drawing.Point(29, 81);
+            this.BandNameCheck.Name = "BandNameCheck";
+            this.BandNameCheck.Size = new System.Drawing.Size(109, 24);
+            this.BandNameCheck.TabIndex = 4;
+            this.BandNameCheck.Text = "Band Name";
+            this.BandNameCheck.UseVisualStyleBackColor = true;
             // 
-            // Album
+            // AlbumCheck
             // 
-            this.Album.AutoSize = true;
-            this.Album.Location = new System.Drawing.Point(29, 130);
-            this.Album.Name = "Album";
-            this.Album.Size = new System.Drawing.Size(75, 24);
-            this.Album.TabIndex = 5;
-            this.Album.Text = "Album";
-            this.Album.UseVisualStyleBackColor = true;
+            this.AlbumCheck.AutoSize = true;
+            this.AlbumCheck.Location = new System.Drawing.Point(29, 130);
+            this.AlbumCheck.Name = "AlbumCheck";
+            this.AlbumCheck.Size = new System.Drawing.Size(75, 24);
+            this.AlbumCheck.TabIndex = 5;
+            this.AlbumCheck.Text = "Album";
+            this.AlbumCheck.UseVisualStyleBackColor = true;
             // 
-            // SongName
+            // SongNameCheck
             // 
-            this.SongName.AutoSize = true;
-            this.SongName.Location = new System.Drawing.Point(29, 177);
-            this.SongName.Name = "SongName";
-            this.SongName.Size = new System.Drawing.Size(109, 24);
-            this.SongName.TabIndex = 6;
-            this.SongName.Text = "Song Name";
-            this.SongName.UseVisualStyleBackColor = true;
+            this.SongNameCheck.AutoSize = true;
+            this.SongNameCheck.Location = new System.Drawing.Point(29, 177);
+            this.SongNameCheck.Name = "SongNameCheck";
+            this.SongNameCheck.Size = new System.Drawing.Size(109, 24);
+            this.SongNameCheck.TabIndex = 6;
+            this.SongNameCheck.Text = "Song Name";
+            this.SongNameCheck.UseVisualStyleBackColor = true;
             // 
-            // Duration
+            // DurationCheck
             // 
-            this.Duration.AutoSize = true;
-            this.Duration.Location = new System.Drawing.Point(29, 226);
-            this.Duration.Name = "Duration";
-            this.Duration.Size = new System.Drawing.Size(89, 24);
-            this.Duration.TabIndex = 7;
-            this.Duration.Text = "Duration";
-            this.Duration.UseVisualStyleBackColor = true;
+            this.DurationCheck.AutoSize = true;
+            this.DurationCheck.Location = new System.Drawing.Point(29, 226);
+            this.DurationCheck.Name = "DurationCheck";
+            this.DurationCheck.Size = new System.Drawing.Size(89, 24);
+            this.DurationCheck.TabIndex = 7;
+            this.DurationCheck.Text = "Duration";
+            this.DurationCheck.UseVisualStyleBackColor = true;
             // 
-            // ReleaseYear
+            // ReleaseYearCheck
             // 
-            this.ReleaseYear.AutoSize = true;
-            this.ReleaseYear.Location = new System.Drawing.Point(29, 272);
-            this.ReleaseYear.Name = "ReleaseYear";
-            this.ReleaseYear.Size = new System.Drawing.Size(114, 24);
-            this.ReleaseYear.TabIndex = 8;
-            this.ReleaseYear.Text = "Release Year";
-            this.ReleaseYear.UseVisualStyleBackColor = true;
+            this.ReleaseYearCheck.AutoSize = true;
+            this.ReleaseYearCheck.Location = new System.Drawing.Point(29, 272);
+            this.ReleaseYearCheck.Name = "ReleaseYearCheck";
+            this.ReleaseYearCheck.Size = new System.Drawing.Size(114, 24);
+            this.ReleaseYearCheck.TabIndex = 8;
+            this.ReleaseYearCheck.Text = "Release Year";
+            this.ReleaseYearCheck.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // GenreBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(155, 34);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(172, 28);
-            this.comboBox1.TabIndex = 9;
+            this.GenreBox.FormattingEnabled = true;
+            this.GenreBox.Location = new System.Drawing.Point(155, 34);
+            this.GenreBox.Name = "GenreBox";
+            this.GenreBox.Size = new System.Drawing.Size(172, 28);
+            this.GenreBox.TabIndex = 9;
             // 
-            // comboBox2
+            // BandNameBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(155, 81);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(172, 28);
-            this.comboBox2.TabIndex = 10;
+            this.BandNameBox.FormattingEnabled = true;
+            this.BandNameBox.Location = new System.Drawing.Point(155, 81);
+            this.BandNameBox.Name = "BandNameBox";
+            this.BandNameBox.Size = new System.Drawing.Size(172, 28);
+            this.BandNameBox.TabIndex = 10;
             // 
-            // comboBox3
+            // AlbumBox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(155, 128);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(172, 28);
-            this.comboBox3.TabIndex = 11;
+            this.AlbumBox.FormattingEnabled = true;
+            this.AlbumBox.Location = new System.Drawing.Point(155, 128);
+            this.AlbumBox.Name = "AlbumBox";
+            this.AlbumBox.Size = new System.Drawing.Size(172, 28);
+            this.AlbumBox.TabIndex = 11;
             // 
-            // comboBox4
+            // SongNameBox
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(155, 175);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(172, 28);
-            this.comboBox4.TabIndex = 12;
+            this.SongNameBox.FormattingEnabled = true;
+            this.SongNameBox.Location = new System.Drawing.Point(155, 175);
+            this.SongNameBox.Name = "SongNameBox";
+            this.SongNameBox.Size = new System.Drawing.Size(172, 28);
+            this.SongNameBox.TabIndex = 12;
             // 
-            // comboBox5
+            // DurationBox
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(155, 226);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(172, 28);
-            this.comboBox5.TabIndex = 13;
+            this.DurationBox.FormattingEnabled = true;
+            this.DurationBox.Location = new System.Drawing.Point(155, 226);
+            this.DurationBox.Name = "DurationBox";
+            this.DurationBox.Size = new System.Drawing.Size(172, 28);
+            this.DurationBox.TabIndex = 13;
             // 
-            // comboBox6
+            // ReleaseYearBox
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(155, 272);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(172, 28);
-            this.comboBox6.TabIndex = 14;
+            this.ReleaseYearBox.FormattingEnabled = true;
+            this.ReleaseYearBox.Location = new System.Drawing.Point(155, 272);
+            this.ReleaseYearBox.Name = "ReleaseYearBox";
+            this.ReleaseYearBox.Size = new System.Drawing.Size(172, 28);
+            this.ReleaseYearBox.TabIndex = 14;
             // 
             // SAX
             // 
@@ -218,40 +221,41 @@
             this.LINQ.Text = "LINQ";
             this.LINQ.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // ResultBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(379, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(348, 430);
-            this.richTextBox1.TabIndex = 18;
-            this.richTextBox1.Text = "";
+            this.ResultBox.Location = new System.Drawing.Point(379, 12);
+            this.ResultBox.Name = "ResultBox";
+            this.ResultBox.Size = new System.Drawing.Size(348, 430);
+            this.ResultBox.TabIndex = 18;
+            this.ResultBox.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(741, 450);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.ResultBox);
             this.Controls.Add(this.LINQ);
             this.Controls.Add(this.DOM);
             this.Controls.Add(this.SAX);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.ReleaseYear);
-            this.Controls.Add(this.Duration);
-            this.Controls.Add(this.SongName);
-            this.Controls.Add(this.Album);
-            this.Controls.Add(this.BandName);
-            this.Controls.Add(this.Genre);
+            this.Controls.Add(this.ReleaseYearBox);
+            this.Controls.Add(this.DurationBox);
+            this.Controls.Add(this.SongNameBox);
+            this.Controls.Add(this.AlbumBox);
+            this.Controls.Add(this.BandNameBox);
+            this.Controls.Add(this.GenreBox);
+            this.Controls.Add(this.ReleaseYearCheck);
+            this.Controls.Add(this.DurationCheck);
+            this.Controls.Add(this.SongNameCheck);
+            this.Controls.Add(this.AlbumCheck);
+            this.Controls.Add(this.BandNameCheck);
+            this.Controls.Add(this.GenreCheck);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.Transform);
             this.Controls.Add(this.Search);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,22 +266,23 @@
         private System.Windows.Forms.Button Search;
         private System.Windows.Forms.Button Transform;
         private System.Windows.Forms.Button Clear;
-        private System.Windows.Forms.CheckBox Genre;
-        private System.Windows.Forms.CheckBox BandName;
-        private System.Windows.Forms.CheckBox Album;
-        private System.Windows.Forms.CheckBox SongName;
-        private System.Windows.Forms.CheckBox Duration;
+        private System.Windows.Forms.CheckBox GenreCheck;
+        private System.Windows.Forms.CheckBox BandNameCheck;
+        private System.Windows.Forms.CheckBox AlbumCheck;
+        private System.Windows.Forms.CheckBox SongNameCheck;
+        private System.Windows.Forms.CheckBox DurationCheck;
         private System.Windows.Forms.CheckBox ReleaseYear;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox GenreBox;
+        private System.Windows.Forms.ComboBox BandNameBox;
+        private System.Windows.Forms.ComboBox AlbumBox;
+        private System.Windows.Forms.ComboBox SongNameBox;
+        private System.Windows.Forms.ComboBox DurationBox;
+        private System.Windows.Forms.ComboBox ReleaseYearBox;
         private System.Windows.Forms.RadioButton SAX;
         private System.Windows.Forms.RadioButton DOM;
         private System.Windows.Forms.RadioButton LINQ;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox ResultBox;
+        private System.Windows.Forms.CheckBox ReleaseYearCheck;
     }
 }
 
